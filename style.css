@@ -140,15 +140,18 @@ html {
     animation-delay: 1s;
     text-align: justify;
 }
-
+.home-sci {
+    display: flex;
+    gap: 17px;
+}
 .home-sci a{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid#0ef;
+    border: 2px solid #0ef;
     border-radius: 50%;
     font-size: 20px;
     color: #0ef;
@@ -157,7 +160,7 @@ html {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    margin: 30px 15px 30px 0;
+    margin: 30px 0;
 }
 
 .home-sci a:hover{
@@ -329,8 +332,6 @@ html {
 section{
     display: block;
     width: 100%;
-    /* padding: 50px 0; */
-    
 }
 
 .sub-title {
@@ -462,31 +463,7 @@ section{
     gap: 1rem;
     margin-top: 2rem;
 }
-.social-link {
-    width: 50px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(0, 255, 255, 0.3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-.social-link:hover {
-    background: rgba(0, 255, 255, 0.2);
-    border-color: #00ffff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
-}
-.social-link svg {
-    width: 30px;
-    height: 30px;
-    fill: #00ffff;
-    transition: 0.3s;
-    cursor: pointer;
-}
+
 .contact-form {
     animation: slideInRight 0.8s ease-out;
 }
